@@ -5,7 +5,7 @@ ENV PORT=8000
 WORKDIR /app
 COPY ["package.json", "package-lock.json*", "./"]
 # install node modules and build assets
-RUN npm install --production
+RUN npm install -g npm@8.5.5 && npm install --production
 COPY . .
 EXPOSE ${PORT}
 CMD [ "npm", "run" , "build" ]
