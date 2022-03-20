@@ -42,14 +42,6 @@ env:
   CONTAINER_NAME: devops-candidate
     
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-
-      - name: Set up Docker Buildx
-        id: buildx
-        uses: docker/setup-buildx-action@v1
-
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
