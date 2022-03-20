@@ -6,7 +6,7 @@
   "private": false,
   "scripts": {
     "start": "react-scripts start",
-    "build": "run-p build:* && react-scripts build",
+    "build": "run-p build:* && react-scripts build && run-p start:*",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx ./src",
